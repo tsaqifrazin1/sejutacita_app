@@ -24,8 +24,5 @@ spec:
             value : "3000"
           - name : DB_URI 
             value : mongodb+srv://sejuta-cita:sejuta-cita@sejutacita.iv72x.mongodb.net/user?retryWrites=true&w=majority
-        livenessProbe:
-          initialDelaySeconds: 20
-          periodSeconds: 5
         ports:
         - containerPort: 3000
