@@ -15,5 +15,12 @@ spec:
       containers:
       - name: sejutacita-app
         image: tsaqifrazinn/sejutacita:1.0
+        livenessProbe:
+          exec:
+            command:
+            - cat
+            - /tmp/healthy
+          initialDelaySeconds: 5
+          periodSeconds: 5
         ports:
         - containerPort: 3000
