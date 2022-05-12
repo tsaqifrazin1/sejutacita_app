@@ -14,7 +14,7 @@ services:
     environment:
       - JWT_SECRET=secret
       - REF_TOKEN_SECRET=refsecret
-      - PORT = 3000
+      - PORT=3000
       - DB_URI=mongodb://mongo:27017/sejuta-cita
     ports :
       - "3000:3000"

@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: sejutacita_app
-        image: tsaqifrazinn/sejutacita_app:latest
+        image: tsaqifrazinn/sejutacita:1.0
         ports:
         - containerPort: 3000
