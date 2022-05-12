@@ -5,6 +5,9 @@ const bodyParser = require('body-parser')
 const cors = require("cors");
 const { errorHandler } = require("./src/middleware");
 const logger = require("morgan");
+const createTestUser = require('./src/utils/seed');
+
+createTestUser();
 
 const app = express();
 
