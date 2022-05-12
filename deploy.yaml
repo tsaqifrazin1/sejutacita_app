@@ -21,7 +21,7 @@ spec:
           - name : REF_TOKEN_SECRET
             value : refsecret
           - name : PORT
-            value : 3000
+            value : "3000"
           - name : DB_URI 
             value : mongodb://mongo:27017/sejuta-cita
         livenessProbe:
