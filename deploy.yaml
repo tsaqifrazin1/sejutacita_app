@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sejutacita_app
+  name: sejutacita-app
 spec:
   replicas: 2
   selector: 
     matchLabels:
-      app: sejutacita_app
+      app: sejutacita-app
   template:
     metadata:
       labels:
         app: nodejs
     spec:
       containers:
-      - name: sejutacita_app
+      - name: sejutacita-app
         image: tsaqifrazinn/sejutacita:1.0
         ports:
         - containerPort: 3000
