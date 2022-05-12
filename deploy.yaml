@@ -15,6 +15,11 @@ spec:
       containers:
       - name: sejutacita-app
         image: tsaqifrazinn/sejutacita:1.0
+        environment:
+          - JWT_SECRET=secret
+          - REF_TOKEN_SECRET=refsecret
+          - PORT=3000
+          - DB_URI=mongodb://mongo:27017/sejuta-cita
         livenessProbe:
           exec:
             command:
