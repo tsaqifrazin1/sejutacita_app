@@ -10,14 +10,14 @@ async function createTestUser() {
             firstname: 'test',
             lastname: 'admin',
             email: 'admin@mail.com',
-            password: bcrypt.hashSync('test', 10),
+            password: bcrypt.hash('test', 12),
             role: "admin"
         });
         const user = new User({
             firstname: 'test',
             lastname: 'user',
             email: 'user@mail.com',
-            password: bcrypt.hashSync('test', 10),
+            password: bcrypt.hash('test', 12),
             role: "user"
         });
         await admin.save();
