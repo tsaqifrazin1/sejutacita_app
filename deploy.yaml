@@ -25,10 +25,6 @@ spec:
           - name : DB_URI 
             value : mongodb+srv://sejuta-cita:sejuta-cita@sejutacita.iv72x.mongodb.net/user?retryWrites=true&w=majority
         livenessProbe:
-          exec:
-            command:
-            - cat
-            - /tmp/healthy
           initialDelaySeconds: 20
           periodSeconds: 5
         ports:
