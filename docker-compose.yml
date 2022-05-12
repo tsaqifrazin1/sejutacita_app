@@ -1,15 +1,22 @@
 version: '2'
 services:
-  app:
-    container_name: app
-    restart : always
-    build : .
-    ports :
-      - "3000:3000"
-    links :
-      - mongo
   mongo:
     container_name: mongo
     image : mongo
     ports :
       - "27017:27017"
+  app:
+    depends_on:
+      - mongo
+    container_name: app
+    restart : always
+    build : .
+    environment:
+      - JWT_SECRET=secret
+      - REF_TOKEN_SECRET=refsecret
+      - PORT = 3000
+      - DB_URI=mongodb://mongo:27017/sejuta-cita
+    ports :
+      - "3000:3000"
+    links :
+      - mongo
