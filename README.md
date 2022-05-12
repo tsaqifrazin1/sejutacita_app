@@ -28,7 +28,9 @@
           "email" : "admin@mail.com",
           "password" = "12345678"
        }
-
+### API Documentation
+   You can use Postman collection and Postman environment for testing this API
+   
 ### Flow chart
 * #### Public
    - ##### Register flow 
