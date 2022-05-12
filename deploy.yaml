@@ -5,7 +5,8 @@ metadata:
 spec:
   replicas: 2
   selector: 
-    app: sejutacita_app
+    matchLabels:
+      app: sejutacita_app
   template:
     metadata:
       labels:
