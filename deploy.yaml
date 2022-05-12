@@ -23,7 +23,7 @@ spec:
           - name : PORT
             value : "3000"
           - name : DB_URI 
-            value : mongodb://mongo:27017/sejuta-cita
+            value : mongodb+srv://sejuta-cita:sejuta-cita@sejutacita.iv72x.mongodb.net/user?retryWrites=true&w=majority
         livenessProbe:
           exec:
             command:
